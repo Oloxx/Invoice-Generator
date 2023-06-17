@@ -25,5 +25,6 @@ Route::get('/', function () {
 });
 
 Route::post('/generate', [DocxController::class, 'generate'])->name('generate');
+Route::get('/download', [DocxController::class, 'download'])->name('download');
 
 require __DIR__.'/auth.php';
